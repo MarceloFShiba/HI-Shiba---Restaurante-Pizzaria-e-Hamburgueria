@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+/* GLOBAL CSS */
+*{
+    box-sizing: border-box;
+}
+
+/* ESTILO BODY */
+body {
+    background-color: #c0c5c3;
+}
