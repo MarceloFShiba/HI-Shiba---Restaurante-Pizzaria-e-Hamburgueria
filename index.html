@@ -9,6 +9,8 @@
     <!--Biblioteca de icones-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    
+
     <title>Hi Shibas</title>
 </head>
 <body>
@@ -381,7 +383,7 @@
                     <label for="pequena" class="flex items-center justify-between gap-4 cursor-pointer mb-4">
                     <span class="flex-1">Pequena</span> 
                     <span class="text-gray-700 font-semibold">20,00R$</span>
-                    <input type="radio" name="tamanho" value="pequena" id="pequena" class="cursor-pointer w-6 h-6">
+                    <input type="radio" name="tamanho" value="pequena" id="pequena" class="cursor-pointer w-6 h-6 appearance-none bg-white rounded-full border-black outline checked:bg-black checked:border-black">
                   </div>
                   <!--Media-->
                   <div class="hover:bg-gray-200 p-2 rounded-md mb-2"
@@ -390,7 +392,7 @@
                     <label for="media" class="flex justify-between items-center gap-4 cursor-pointer mb-4">
                       <span class="flex-1">Media</span>
                       <span class="text-gray-700 font-semibold">22,00R$</span>
-                      <input type="radio" name="tamanho" value="media" id="media" class="cursor-pointer w-6 h-6">
+                      <input type="radio" name="tamanho" value="media" id="media" class="cursor-pointer w-6 h-6 appearance-none bg-white rounded-full border-black outline checked:bg-black checked:border-black">
                   </div>
                   <!--Grande-->
                   <div>
@@ -400,20 +402,31 @@
                       <label for="grande" class="flex justify-between items-center gap-4 cursor-pointer mb-4">
                         <span class="flex-1">Grande</span>
                         <Span class="text-gray-700 font-semibold">25,00R$</Span>
-                        <input type="radio" name="tamanho" value="grande" id="grande" class="cursor-pointer w-6 h-6">
+                        <input type="radio" name="tamanho" value="grande" id="grande" class="cursor-pointer w-6 h-6 appearance-none bg-white rounded-full border-black outline checked:bg-black checked:border-black">
                   </div>
                 <!--Fim opções de tamanho-->  
                 </div>
                 <!--Valor e Adcionar ao carrinho-->
                 <div class="flex items-center justify-between mt-4">
-                  <span class="font-bold text-green-700">R$ 20,00</span>
-                  <input type="number" id="quantity-input" value="1" min="1" class="w-16 p-2 border rounded-md">
-                  <button class="bg-red-500 text-white px-4 py-2 rounded-md ml-4 hover:bg-red-600 duration-200" id="add-to-cart-btn">Adicionar ao carrinho <i class="fa fa-cart-plus text-lg text-white"></i></button>
+                  <span class="font-bold text-green-700">R$ 0,00</span>
+                  <div class="flex justify-center items-center bg-black rounded-md">
+                    <div class="m-1 border rouded">
+                      <button class="px-2 py-1 bg-black font-bold text-white rounded-l hover:bg-gray-300" id="decrease-qty">-</button>
+                      <input type="number" class="text-center font-bold text-white bg-black w-16 border-none  focus:outline-none [&::-webkit-inner-spin-button]:appearance-none
+                      [&::-webkit-outer-spin-button]" value="1" min="1" max="99" step="1" id="number" >
+                      <button class="px-2 py-1  rounded-r hover:bg-gray-300 font-bold text-white bg-black" id="increase-qty">+</button>
+                    </div>
+                  </div>
+                  <button class="bg-red-500 text-white px-4 py-2 rounded-md ml-4 hover:bg-red-600 duration-200" id="add-to-cart-btn">
+                    Adicionar ao carrinho 
+                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                  </button>
                 </div>
               </div>
             </div>
       </div>
     </div>
+    
     
     <!--Footer carrinho-->
     <footer class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center">
