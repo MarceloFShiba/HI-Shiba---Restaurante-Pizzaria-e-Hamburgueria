@@ -365,9 +365,7 @@
     <!--Modal Marmitex Tradicional-->
     <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-99 flex items-center justify-center">
       <div class=" bg-white p-5 rounded-md min-w-full md:min-w-[600px]">
-            <div class="border p-4 rounded-lg hover:shadow-lg flex-col gap-2"
-              data-name="Marmitex Tradicional"
-              Data-price="20.00">
+            <div class="border p-4 rounded-lg hover:shadow-lg flex-col gap-2">
               <img src="/assets/marmitex1.jpg" alt="Marmitex Tradicional" class="w-full h-48 rounded-md mb-4">
               <!--Modal descrição-->
               <div>
@@ -377,22 +375,31 @@
                 <!--Opções de tamanho-->
                 <div class="flex-col mb-4">
                   <!--Pequena-->
-                  <div class="hover:bg-gray-200 p-2 rounded-md mb-2">
-                    <label for="pequena" class="flex justify-between mb-4">
-                      Pequena
-                      <input type="radio" name="tamanho" value="pequena" id="pequena" class="cursor-pointer w-6 h-6" checked>
+                  <div class="hover:bg-gray-200 p-2 rounded-md mb-2"
+                    data-name="Marmitex Tradicional P"
+                    data-price="20.00">
+                    <label for="pequena" class="flex items-center justify-between gap-4 cursor-pointer mb-4">
+                    <span class="flex-1">Pequena</span> 
+                    <span class="text-gray-700 font-semibold">20,00R$</span>
+                    <input type="radio" name="tamanho" value="pequena" id="pequena" class="cursor-pointer w-6 h-6">
                   </div>
                   <!--Media-->
-                  <div class="hover:bg-gray-200 p-2 rounded-md mb-2">
-                    <label for="media" class="flex justify-between mb-4">
-                      Media
+                  <div class="hover:bg-gray-200 p-2 rounded-md mb-2"
+                    data-name="Marmitex Tradicional M"
+                    data-price="22.00">
+                    <label for="media" class="flex justify-between items-center gap-4 cursor-pointer mb-4">
+                      <span class="flex-1">Media</span>
+                      <span class="text-gray-700 font-semibold">22,00R$</span>
                       <input type="radio" name="tamanho" value="media" id="media" class="cursor-pointer w-6 h-6">
                   </div>
                   <!--Grande-->
                   <div>
-                    <div class="hover:bg-gray-200 p-2 rounded-md mb-2">
-                      <label for="grande" class="flex justify-between mb-4">
-                        Grande
+                    <div class="hover:bg-gray-200 p-2 rounded-md mb-2"
+                      data-name="Marmitex Tradicional G"
+                      data-price="25.00">
+                      <label for="grande" class="flex justify-between items-center gap-4 cursor-pointer mb-4">
+                        <span class="flex-1">Grande</span>
+                        <Span class="text-gray-700 font-semibold">25,00R$</Span>
                         <input type="radio" name="tamanho" value="grande" id="grande" class="cursor-pointer w-6 h-6">
                   </div>
                 <!--Fim opções de tamanho-->  
