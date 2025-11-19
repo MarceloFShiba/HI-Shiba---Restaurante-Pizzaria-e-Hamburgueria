@@ -8,8 +8,7 @@
     <link href="src/input.css" rel="stylesheet">
     <!--Biblioteca de icones-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    
+ 
 
     <title>Hi Shibas</title>
 </head>
@@ -45,7 +44,7 @@
     <div class="w-full mb-4 bg-white py-4 sticky top-0">
     <ul class="flex justify-center items-center gap-2 font-bold text-1xl">
       <li><a href="#Marmitex">Marmitex</a></li>
-      <li><a href="#Hamburguers">Hamburguers</a></li>
+      <li><a href="#Hamburguer">Hamburguers</a></li>
       <li><a href="#Pizzas">Pizzas</a></li>
       <li><a href="#Bebidas">Bebidas</a></li>
     </ul>
@@ -59,9 +58,7 @@
           <h2 class="text-3xl font-bold mb-4">Marmitex</h2>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <!--Item 1-->
-            <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2"
-              data-name="Marmitex Tradicional"
-              Data-price="20.00">
+            <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2 open-modal" id="m1" data-index="0">
               <img src="/assets/marmitex1.jpg" alt="Marmitex Tradicional" class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300">
               <div>
                 <h3 class="text-xl font-semibold mb-2">Marmitex Tradicional</h3>
@@ -70,9 +67,7 @@
               </div>
             </div>
             <!--Item 2-->
-            <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2"
-              data-name="Marmitex Frango"
-              Data-price="19.00">
+            <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2 open-modal" id="m2" data-index="1">
               <img src="/assets/marmitex2.jpg" alt="Marmitex frango" class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300">
               <div>
                 <h3 class="text-xl font-semibold mb-2">Marmitex Frango</h3>
@@ -81,9 +76,7 @@
               </div> 
             </div>
             <!--Item 3-->
-            <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2"
-              data-name="Marmitex Lombo"
-              Data-price="19.00">
+            <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2 open-modal" id="m3" data-index="2">
               <img src="/assets/marmitex3.jpg" alt="Marmitex Lombo" class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300">
               <div>
                 <h3 class="text-xl font-semibold mb-2">Marmitex de Lombo</h3>
@@ -92,9 +85,7 @@
               </div>
             </div>
             <!--Item 4-->
-            <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2"
-              data-name="Marmitex Vegetariano"
-              Data-price="20.00">
+            <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2 open-modal" id="m4" data-index="3">
               <img src="/assets/marmitex4.jpg" alt="Marmitex Vegetariano" class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300">
               <div>
                 <h3 class="text-xl font-semibold mb-2">Marmitex Vegetariano</h3>
@@ -103,20 +94,16 @@
               </div>
             </div>
             <!--Item 5-->
-            <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2"
-              data-name="Marmitex Picanha"
-              Data-price="36.00">
+            <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2 open-modal" id="m5" data-index="4">
               <img src="/assets/marmitex5.jpg" alt="Marmitex Picanha" class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300">
               <div>
                 <h3 class="text-xl font-semibold mb-2">Marmitex Picanha</h3>
                 <p class="text-gray-600 mb-2">Arroz, feijão, batata frita e Picanha.</p>
-                <span class="font-bold text-green-700">R$ 36,00</span>
+                <span class="font-bold text-green-700">R$ 30,00</span>
               </div>
             </div>
             <!--item 6-->
-            <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2"
-              data-name="Marmitex File de peixe"
-              Data-price="18.00">
+            <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2 open-modal" id="m6" data-index="5">
               <img src="/assets/marmitex6.jpg" alt="Marmitex File de peixe" class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300">
               <div>
                 <h3 class="text-xl font-semibold mb-2">Marmitex File de Peixe</h3>
@@ -125,9 +112,7 @@
               </div>
             </div>            
             <!--Item 7-->
-            <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2"
-              data-name="Marmitex Salada"
-              Data-price="8.00">
+            <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2 open-modal" id="m7" data-index="6">
               <img src="/assets/marmitex7.jpg" alt="Marmitex Salada" class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300">
               <div>
                 <h3 class="text-xl font-semibold mb-2">Marmitex Salada</h3>
@@ -144,9 +129,7 @@
           <h2 class="text-3xl font-bold mb-4">Hamburguers</h2>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <!--Item 1-->
-            <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2"
-              data-name="Hamburguer Tradicional"
-              Data-price="24.00">
+            <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2 open-modal" id="h1" data-index="7">
               <img src="/assets/Hamburguer1.jpg" alt="Hamburguer Tradicional" class="w-36 h-36 rounded-md hover:scale-110 hover:rotate-2 duration-300">
               <div>
                 <h3 class="text-xl font-semibold mb-2">Hamburguer Tradicional</h3>
@@ -155,9 +138,7 @@
               </div>
             </div>
             <!--Item 2-->
-            <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2"
-              data-name="Hamburguer Bacon"
-              Data-price="26.00">
+            <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2 open-modal" id="h2" data-index="8">
               <img src="/assets/Hamburguer2.jpg" alt="Hamburguer Bacon" class="w-36 h-36 rounded-md hover:scale-110 hover:rotate-2 duration-300">
               <div>
                 <h3 class="text-xl font-semibold mb-2">Hamburguer Bacon</h3>
@@ -166,9 +147,7 @@
               </div>
             </div>
             <!--Item 3-->
-            <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2"
-              data-name="Hamburguer Duplo"
-              Data-price="32.00">
+            <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2 open-modal" id="h3" data-index="9">
               <img src="/assets/Hamburguer3.jpg" alt="Hamburguer Duplo" class="w-36 h-36 rounded-md hover:scale-110 hover:rotate-2 duration-300">
               <div>
                 <h3 class="text-xl font-semibold mb-2">Hamburguer <br>Duplo</h3>
@@ -177,9 +156,7 @@
               </div>
             </div>
             <!--Item 4-->
-            <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2"
-              data-name="Hamburguer x-salada"
-              Data-price="26.00">
+            <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2 open-modal" id="h4" data-index="10">>
               <img src="/assets/Hamburguer4.jpg" alt="Hamburguer x-salada" class="w-36 h-36 rounded-md hover:scale-110 hover:rotate-2 duration-300">
               <div>
                 <h3 class="text-xl font-semibold mb-2">Hamburguer x-salada</h3>
@@ -188,20 +165,16 @@
               </div>
             </div>
             <!--Item 5-->
-            <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2"
-              data-name="Hamburguer x-salada bacon"
-              Data-price="28.00">
+            <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2 open-modal" id="h5" data-index="11">
               <img src="/assets/Hamburguer5.jpg" alt="Hamburguer x-salada bacon" class="w-36 h-36 rounded-md hover:scale-110 hover:rotate-2 duration-300">
               <div>
                 <h3 class="text-xl font-semibold mb-2">Hamburguer x-salada bacon</h3>
-                <p class="text-gray-600 mb-2">Hamburguer 180g, Pao de fermentação natural, bacon, tomate, alface e queijo prato </p>
+                <p class="text-gray-600 mb-2">Hamburguer 180g, Pao de fermentação natural, bacon, tomate, alface e queijo prato</p>
                 <span class="font-bold text-green-700">R$ 28,00</span>
               </div>
             </div>
             <!--Item 6-->
-            <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2"
-              data-name="Hamburguer cheddar"
-              Data-price="28.00">
+            <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2 open-modal" id="h6" data-index="12">
               <img src="/assets/Hamburguer6.jpg" alt="Hamburguer cheddar" class="w-36 h-36 rounded-md hover:scale-110 hover:rotate-2 duration-300">
               <div>
                 <h3 class="text-xl font-semibold mb-2">Hamburguer <br>cheddar</h3>
@@ -210,35 +183,29 @@
               </div>
             </div>
             <!--Item 7-->
-            <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2"
-              data-name="Hamburguer smash cheddar"
-              Data-price="28.00">
+            <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2 open-modal" id="h7" data-index="13">
               <img src="/assets/Hamburguer7.jpg" alt="Hamburguer smash cheddar" class="w-36 h-36 rounded-md hover:scale-110 hover:rotate-2 duration-300">
               <div>
                 <h3 class="text-xl font-semibold mb-2">Hamburguer Smash Cheddar</h3>
-                <p class="text-gray-600 mb-2">2 Hamburguer 90g prensados, Pao de fermentação natural, bacon e queijo cheddar fatiado </p>
+                <p class="text-gray-600 mb-2">2 Hamburguer 90g prensados, Pao de fermentação natural, bacon e queijo cheddar fatiado</p>
                 <span class="font-bold text-green-700">R$ 28,00</span>
               </div>
             </div>
             <!--Item 8-->
-            <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2"
-              data-name="Hamburguer vulcao"
-              Data-price="34.00">
+            <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2 open-modal" id="h8" data-index="14">
               <img src="/assets/Hamburguer8.jpg" alt="Hamburguer vulcao" class="w-36 h-36 rounded-md hover:scale-110 hover:rotate-2 duration-300">
               <div>
                 <h3 class="text-xl font-semibold mb-2">Hamburguer <br>Vulcao</h3>
-                <p class="text-gray-600 mb-2">2 Hamburguer 90g prensados, Pao de fermentação natural, bacon e queijo cheddar cremoso em dobro </p>
+                <p class="text-gray-600 mb-2">2 Hamburguer 90g prensados, Pao de fermentação natural, bacon e queijo cheddar cremoso em dobro</p>
                 <span class="font-bold text-green-700">R$ 34,00</span>
               </div>
             </div>
             <!--Item 9-->
-           <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2"
-              data-name="Hamburguer matatata fome"
-              Data-price="48.00">
+           <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2 open-modal" id="h9" data-index="15">
               <img src="/assets/Hamburguer9.jpg" alt="Hamburguer matatata fome" class="w-36 h-36 rounded-md hover:scale-110 hover:rotate-2 duration-300">
               <div>
                 <h3 class="text-xl font-semibold mb-2">Hamburguer <br>Matatata Fome</h3>
-                <p class="text-gray-600 mb-2">3 Hamburguer 180g, Pao de fermentação natural, alface, tomate, bacon e queijo cheddar cremoso em dobro </p>
+                <p class="text-gray-600 mb-2">3 Hamburguer 180g, Pao de fermentação natural, alface, tomate, bacon e queijo cheddar cremoso em dobro</p>
                 <span class="font-bold text-green-700">R$ 48,00</span>
               </div>
             </div>
@@ -250,9 +217,7 @@
           <h2 class="text-3xl font-bold mb-4">Pizzas</h2>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <!--Item 1-->
-            <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2"
-              data-name="Pizza Tradicional"
-              Data-price="35.00">
+            <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2 open-modal" id="p1" data-index="16">
               <img src="/assets/pizza1.jpg" alt="Pizza Tradicional" class="w-36 h-36 rounded-md hover:scale-110 hover:rotate-2 duration-300">
               <div>
                 <h3 class="text-xl font-semibold mb-2">Pizza Tradicional</h3>
@@ -261,9 +226,7 @@
               </div>
             </div>
             <!--Item 2-->
-            <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2"
-              data-name="Pizza Calabresa"
-              Data-price="40.00">
+            <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2 open-modal" id="p2" data-index="17">
               <img src="/assets/pizza2.jpg" alt="Pizza Calabresa" class="w-36 h-36 rounded-md hover:scale-110 hover:rotate-2 duration-300">
               <div>
                 <h3 class="text-xl font-semibold mb-2">Pizza Calabresa</h3>
@@ -272,9 +235,7 @@
               </div>
             </div>
             <!--Item 3-->
-            <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2"
-              data-name="Pizza 4 Queijos"
-              Data-price="40.00">
+            <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2 open-modal" id="p3" data-index="18">
               <img src="/assets/pizza3.jpg" alt="Pizza 4 queijos" class="w-36 h-36 rounded-md hover:scale-110 hover:rotate-2 duration-300">
               <div>
                 <h3 class="text-xl font-semibold mb-2">Pizza 4 Queijos</h3>
@@ -283,9 +244,7 @@
               </div>
             </div>
             <!--Item 4-->
-            <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2"
-              data-name="Pizza Frango com catupiry"
-              Data-price="40.00">
+            <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2 open-modal" id="p4" data-index="19">
               <img src="/assets/pizza4.jpg" alt="Pizza Frango com catupiry" class="w-36 h-36 rounded-md hover:scale-110 hover:rotate-2 duration-300">
               <div>
                 <h3 class="text-xl font-semibold mb-2">Pizza Frango com Catupiry</h3>
@@ -294,9 +253,7 @@
               </div>
             </div>
             <!--Item 5-->
-            <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2"
-              data-name="Pizza Atum"
-              Data-price="40.00">
+            <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2 open-modal" id="p5" data-index="20">
               <img src="/assets/pizza5.jpg" alt="Pizza Atum" class="w-36 h-36 rounded-md hover:scale-110 hover:rotate-2 duration-300">
               <div>
                 <h3 class="text-xl font-semibold mb-2">Pizza de Atum</h3>
@@ -305,9 +262,7 @@
               </div>
             </div>
             <!--Item 6-->
-            <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2"
-              data-name="Pizza Estrangonoff"
-              Data-price="45.00">
+            <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2 open-modal" id="p6" data-index="21">
               <img src="/assets/pizza6.jpg" alt="Pizza Estrangonoff" class="w-36 h-36 rounded-md hover:scale-110 hover:rotate-2 duration-300">
               <div>
                 <h3 class="text-xl font-semibold mb-2">Pizza Estrangonoff</h3>
@@ -323,9 +278,7 @@
           <h2 class="text-3xl font-bold mb-4">Bebidas</h2>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <!--Item 1-->
-            <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2"
-              data-name="Coca-Cola lata 350ml"
-              Data-price="5.00">
+            <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2 open-modal" id="b1" data-index="22">
               <img src="/assets/bebida1.jpg" alt="Coca-Cola lata" class="w-36 h-36 rounded-md hover:scale-110 hover:rotate-2 duration-300">
               <div>
                 <h3 class="text-xl font-semibold mb-2">Coca-Cola lata</h3>
@@ -334,9 +287,7 @@
               </div>
             </div>
             <!--Item 2-->
-            <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2"
-              data-name="Guarana lata 350ml"
-              Data-price="4.50">
+            <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2 open-modal" id="b2" data-index="23">
               <img src="/assets/bebida2.jpg" alt="Guarana lata" class="w-36 h-36 rounded-md hover:scale-110 hover:rotate-2 duration-300">
               <div>
                 <h3 class="text-xl font-semibold mb-2">Guarana lata</h3>
@@ -345,9 +296,7 @@
               </div>
             </div>
             <!--Item 3-->
-            <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2"
-              data-name="Fanta lata 350ml"
-              Data-price="4.50">
+            <div class="border p-4 rounded-lg hover:shadow-lg hover:cursor-pointer duration-200 flex gap-2 open-modal" id="b3" data-index="24">
               <img src="/assets/bebida3.jpg" alt="Fanta lata" class="w-36 h-36 rounded-md hover:scale-110 hover:rotate-2 duration-300">
               <div>
                 <h3 class="text-xl font-semibold mb-2">Fanta lata</h3>
@@ -365,17 +314,17 @@
     <!--Modal Menu Marmitex-->
     
     <!--Modal Marmitex Tradicional-->
-    <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-99 flex items-center justify-center">
-      <div class=" bg-white p-5 rounded-md min-w-full md:min-w-[600px]">
+    <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-99 hidden items-center justify-center" id="modal">
+      <div class="bg-white p-5 rounded-md min-w-full md:min-w-[600px]">
             <div class="border p-4 rounded-lg hover:shadow-lg flex-col gap-2">
-              <img src="/assets/marmitex1.jpg" alt="Marmitex Tradicional" class="w-full h-48 rounded-md mb-4">
+              <img src="/assets/marmitex1.jpg" alt="Marmitex Tradicional" class="w-full h-48 rounded-md mb-4" id="modal-image">
               <!--Modal descrição-->
               <div>
-                <h3 class="text-xl font-semibold mb-2">Marmitex Tradicional</h3>
-                <p class="text-gray-600 mb-2">Arroz, feijão, bife acebolado, batata frita e legumes.</p>
+                <h3 class="text-xl font-semibold mb-2" id="modal-produto">Marmitex Tradicional</h3>
+                <p class="text-gray-600 mb-2" id="modal-descricao">Arroz, feijão, bife acebolado, batata frita e legumes.</p>
                 <p class="text-gray-600 font-bold mb-4">Escolha o tamanho da marmita.</p>
                 <!--Opções de tamanho-->
-                <div class="flex-col mb-4">
+                <div class="flex-col mb-4" id="modal-tamanhos">
                   <!--Pequena-->
                   <div class="hover:bg-gray-200 p-2 rounded-md mb-2"
                     data-name="Marmitex Tradicional P"
@@ -408,16 +357,16 @@
                 </div>
                 <!--Valor e Adcionar ao carrinho-->
                 <div class="flex items-center justify-between mt-4">
-                  <span class="font-bold text-green-700">R$ 0,00</span>
+                  <span class="font-bold text-green-700" id="modal-preco-final">R$ 0,00</span>
                   <div class="flex justify-center items-center bg-black rounded-md">
                     <div class="m-1 border rouded">
                       <button class="px-2 py-1 bg-black font-bold text-white rounded-l hover:bg-gray-300" id="decrease-qty">-</button>
-                      <input type="number" class="text-center font-bold text-white bg-black w-16 border-none  focus:outline-none [&::-webkit-inner-spin-button]:appearance-none
+                      <input type="number" id="modal-qty" class="text-center font-bold text-white bg-black w-16 border-none  focus:outline-none [&::-webkit-inner-spin-button]:appearance-none
                       [&::-webkit-outer-spin-button]" value="1" min="1" max="99" step="1" id="number" >
                       <button class="px-2 py-1  rounded-r hover:bg-gray-300 font-bold text-white bg-black" id="increase-qty">+</button>
                     </div>
                   </div>
-                  <button class="bg-red-500 text-white px-4 py-2 rounded-md ml-4 hover:bg-red-600 duration-200" id="add-to-cart-btn">
+                  <button class="bg-red-500 text-white px-4 py-2 rounded-md ml-4 hover:bg-red-600 duration-200 cursor-pointer" id="add-to-cart-btn">
                     Adicionar ao carrinho 
                     <i class="fa fa-cart-plus text-lg text-white"></i>
                   </button>
@@ -426,15 +375,16 @@
             </div>
       </div>
     </div>
-    
-    
+
     <!--Footer carrinho-->
-    <footer class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center">
+    <footer class="w-full bg-red-500 py-3 fixed bottom-0 z-9999 flex items-center justify-center">
         <button class="flex items-center gap-2 text-white font-bold hover:cursor-pointer" id="cart-btn">
             (<span id="cart-count">0</span>)
             Veja meu carrinho
             <i class="fa fa-cart-plus text-lg text-white"></i>
         </button>
-    </footer>  
+    </footer>
+      <!--SCRIPT-->
+  <script src="script.js"></script>  
 </body>
 </html>
