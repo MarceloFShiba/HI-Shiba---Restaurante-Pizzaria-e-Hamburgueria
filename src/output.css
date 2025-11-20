@@ -201,8 +201,14 @@
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
+  .z-10 {
+    z-index: 10;
+  }
   .z-40 {
     z-index: 40;
+  }
+  .z-98 {
+    z-index: 98;
   }
   .z-99 {
     z-index: 99;
@@ -326,6 +332,9 @@
   }
   .gap-6 {
     gap: calc(var(--spacing) * 6);
+  }
+  .rounded {
+    border-radius: 0.25rem;
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);

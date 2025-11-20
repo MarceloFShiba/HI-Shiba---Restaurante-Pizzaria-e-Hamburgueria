@@ -311,48 +311,20 @@
     </main>
     <!--Fim do Menu-->
     
-    <!--Modal Menu Marmitex-->
+    <!--Modal Menu -->
     
-    <!--Modal Marmitex Tradicional-->
-    <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-99 hidden items-center justify-center" id="modal">
+    <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-10 hidden items-center justify-center" id="modal">
       <div class="bg-white p-5 rounded-md min-w-full md:min-w-[600px]">
             <div class="border p-4 rounded-lg hover:shadow-lg flex-col gap-2">
               <img src="/assets/marmitex1.jpg" alt="Marmitex Tradicional" class="w-full h-48 rounded-md mb-4" id="modal-image">
               <!--Modal descrição-->
               <div>
-                <h3 class="text-xl font-semibold mb-2" id="modal-produto">Marmitex Tradicional</h3>
-                <p class="text-gray-600 mb-2" id="modal-descricao">Arroz, feijão, bife acebolado, batata frita e legumes.</p>
-                <p class="text-gray-600 font-bold mb-4">Escolha o tamanho da marmita.</p>
+                <h3 class="text-xl font-semibold mb-2" id="modal-produto"></h3>
+                <p class="text-gray-600 mb-2" id="modal-descricao"></p>
+                <p class="text-gray-600 font-bold mb-4"></p>
                 <!--Opções de tamanho-->
                 <div class="flex-col mb-4" id="modal-tamanhos">
-                  <!--Pequena-->
-                  <div class="hover:bg-gray-200 p-2 rounded-md mb-2"
-                    data-name="Marmitex Tradicional P"
-                    data-price="20.00">
-                    <label for="pequena" class="flex items-center justify-between gap-4 cursor-pointer mb-4">
-                    <span class="flex-1">Pequena</span> 
-                    <span class="text-gray-700 font-semibold">20,00R$</span>
-                    <input type="radio" name="tamanho" value="pequena" id="pequena" class="cursor-pointer w-6 h-6 appearance-none bg-white rounded-full border-black outline checked:bg-black checked:border-black">
-                  </div>
-                  <!--Media-->
-                  <div class="hover:bg-gray-200 p-2 rounded-md mb-2"
-                    data-name="Marmitex Tradicional M"
-                    data-price="22.00">
-                    <label for="media" class="flex justify-between items-center gap-4 cursor-pointer mb-4">
-                      <span class="flex-1">Media</span>
-                      <span class="text-gray-700 font-semibold">22,00R$</span>
-                      <input type="radio" name="tamanho" value="media" id="media" class="cursor-pointer w-6 h-6 appearance-none bg-white rounded-full border-black outline checked:bg-black checked:border-black">
-                  </div>
-                  <!--Grande-->
-                  <div>
-                    <div class="hover:bg-gray-200 p-2 rounded-md mb-2"
-                      data-name="Marmitex Tradicional G"
-                      data-price="25.00">
-                      <label for="grande" class="flex justify-between items-center gap-4 cursor-pointer mb-4">
-                        <span class="flex-1">Grande</span>
-                        <Span class="text-gray-700 font-semibold">25,00R$</Span>
-                        <input type="radio" name="tamanho" value="grande" id="grande" class="cursor-pointer w-6 h-6 appearance-none bg-white rounded-full border-black outline checked:bg-black checked:border-black">
-                  </div>
+                 
                 <!--Fim opções de tamanho-->  
                 </div>
                 <!--Valor e Adcionar ao carrinho-->
@@ -377,7 +349,7 @@
     </div>
 
     <!--Footer carrinho-->
-    <footer class="w-full bg-red-500 py-3 fixed bottom-0 z-9999 flex items-center justify-center">
+    <footer class="w-full bg-red-500 py-3 fixed bottom-0 z-99 flex items-center justify-center">
         <button class="flex items-center gap-2 text-white font-bold hover:cursor-pointer" id="cart-btn">
             (<span id="cart-count">0</span>)
             Veja meu carrinho

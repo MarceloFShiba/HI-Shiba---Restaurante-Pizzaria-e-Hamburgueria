@@ -166,13 +166,9 @@ const produtos = [
 }
 ];
 
-// variável para armazenar preço selecionado (número)
-let precoSelecionado = 0;
 
-// função utilitária para formatar preço BR
-function formatBR(value) {
-  return 'R$ ' + Number(value).toFixed(2).replace('.', ',');
-}
+
+
 
 // evento: abrir modal ao clicar em um card
 document.querySelectorAll(".open-modal").forEach(card => {
@@ -200,11 +196,16 @@ document.querySelectorAll(".open-modal").forEach(card => {
             <span class="flex-1">${label}</span>
             <span class="text-gray-700 font-semibold">R$ ${Number(preco).toFixed(2).replace('.', ',')}</span>
           </label>
-        </div>
+        </div>     
       `;
     }).join('');
 
-    // reset quantidade e preço
+
+  // função utilitária para formatar preço BR
+  function formatBR(value) {
+    return 'R$ ' + Number(value).toFixed(2).replace('.', ',');
+  } 
+// reset quantidade e preço
     modalQty.value = 1;
     precoSelecionado = 0;
     modalPrecoFinal.textContent = formatBR(0);
@@ -214,6 +215,10 @@ document.querySelectorAll(".open-modal").forEach(card => {
     modal.style.display = 'flex';
   });
 });
+
+// variável para armazenar preço selecionado
+let precoSelecionado = 0;
+
 // evento: mudar preço ao selecionar tamanho
 modalTamanhos.addEventListener('change', (e) => {
   const radio = e.target;
@@ -281,5 +286,6 @@ function produtoIdFromModal() {
   const prod = produtos.find(p => p.nome === nome);
   return prod ? prod.id : null;
 }
+
 
 })
