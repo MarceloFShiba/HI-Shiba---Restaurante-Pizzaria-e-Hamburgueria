@@ -196,7 +196,7 @@ document.querySelectorAll(".open-modal").forEach(card => {
             <span class="flex-1">${label}</span>
             <span class="text-gray-700 font-semibold">R$ ${Number(preco).toFixed(2).replace('.', ',')}</span>
           </label>
-        </div>     
+        </div>  
       `;
     }).join('');
 
@@ -276,8 +276,11 @@ addToCartBtn.addEventListener('click', () => {
 
 // fechar modal clicando fora do conteúdo
 modal.addEventListener('click', (e) => {
-  if (e.target === modal) modal.classList.add('hidden')
+  if (e.target === modal) {
+    modal.classList.add('hidden');
     modal.style.display = 'none ';
+  }
+    
 });
 
 // função para obter o id do produto a partir do nome exibido no modal
